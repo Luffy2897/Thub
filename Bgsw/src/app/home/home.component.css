@@ -1,0 +1,45 @@
+.bg {
+  background-image: url("../../assets/imges/background.png");
+  background-attachment: fixed;
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.book {
+  position: absolute;
+  top: 45%;
+  margin-left: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 52px;
+  position: absolute;
+  font-weight: bold;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 5px;
+  text-decoration: none;
+}
+
+.b1 {
+  margin-top: 1.5%;
+  margin-left: 400px;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+}

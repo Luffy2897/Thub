@@ -1,0 +1,18 @@
+.header {
+  background-color: aquamarine;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#list {
+  text-transform: capitalize;
+  text-decoration: dashed;
+}
+
+.full {
+  margin: auto 10px;
+  width: auto;
+  height: 2000px;
+  background-color: rgb(155, 213, 240);
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bosch-softwaretechnologies.com%2Fen%2Four-company%2Fabout-us%2F&psig=AOvVaw1iU7RkpS31O_Why20Haa3l&ust=1686392256641000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCOjn2e36tf8CFQAAAAAdAAAAABAE");
+}

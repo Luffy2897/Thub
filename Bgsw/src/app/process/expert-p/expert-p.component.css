@@ -1,0 +1,9 @@
+.background{
+  background-image: url("../../../assets/imges/srikars.png");
+  background-size: cover;
+  width: 99.6vw;
+  height: 23vh;
+}
+  .a{
+    margin-left: 2%;
+  }

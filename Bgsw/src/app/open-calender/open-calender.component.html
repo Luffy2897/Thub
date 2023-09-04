@@ -1,0 +1,139 @@
+<div class="container">
+  <div>
+    <a (click)="onBtnClick()"
+      ><button mat-mini-fab id="a1" style="margin-top: 4.5%">
+        <mat-icon>home</mat-icon>
+      </button></a
+    >
+  </div>
+
+  <div class="links">
+    <br />
+    <a (click)="sat()" style="color: black">SAT -> </a
+    ><a (click)="oc()" style="color: crimson">OPEN CALENDER</a>
+  </div>
+  <br />
+  <!-- CODE FOR LOGOUT -->
+  <div>
+    <a (click)="log()" style="text-decoration: none">
+      <button mat-raised-button color="warn" class="c" style="color: black">
+        LOGOUT
+      </button>
+    </a>
+  </div>
+  <!-- CODE FOR RESOURCES EXPANSION PANEL -->
+  <div class="exp">
+    <mat-form-field
+      color="accent"
+      style="margin-left: 0.5%; width: 17%; margin-top: 0%"
+    >
+      <mat-label style="font-weight: bold; color: aliceblue"
+        >Resources</mat-label
+      >
+
+      <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EbS6XRQYxMZBoD0zpafrdLMBaHJH-8L4tt2tcl2xgGkKBw?e=NxukWP"
+          target="_blank"
+        >
+          <mat-option value="rs1" style="font-weight: bold">
+            Faculty Re-Evaluation Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EStY9J-5fKlCriK2v-g9g5YBNRFECBvgRhW8lcqiqpovuA?e=9Shc3p"
+          target="_blank"
+        >
+          <mat-option value="rs2" style="font-weight: bold">
+            Training Need Requisition Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/r/personal/rxd2kor_bosch_com/Documents/CD-80006-903_ANH_N_EN_2021-06-29.pdf?csf=1&web=1&e=FLyYfR"
+          target="_blank"
+        >
+          <mat-option value="rs3" style="font-weight: bold">
+            Single Source Justification Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EZSoSCr3ha1LuW-vps6idP4BAPUPaq_VOkH43nvELI4btA?e=s8tUlg"
+          target="_blank"
+        >
+          <mat-option value="rs4" style="font-weight: bold">
+            Faculty Evaluation Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EZ6eObVy6PxFsZDXAAfjbs0BPl4muMx6M23xzL6muJQhtQ?e=a0TP6m"
+          target="_blank"
+        >
+          <mat-option value="rs5" style="font-weight: bold">
+            Instructor Design Template
+          </mat-option>
+        </a>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <!-- CODE FOR ALL THE QUARTERS IN THE TAB GROUP -->
+  <mat-tab-group color="warn" dynamicHeight="11" class="box">
+    <mat-tab label="QUARTER 1">
+      <a
+        mat-raised-button
+        class="b1"
+        href="https://bosch-my.sharepoint.com/:x:/p/xvm2kor/EU9qQn2dphJFoR_FWd4osKQB6NmOCdgNl-H-SGk3aJ3XDQ"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+    </mat-tab>
+    <br />
+
+    <mat-tab label="QUARTER 2">
+      <a
+        mat-raised-button
+        class="b2"
+        href="https://bosch-my.sharepoint.com/:x:/p/xvm2kor/EaIHL42E-4dIgCEayu_03xwB2tSaIU9T8BGPdrl2xOTW7w"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+    </mat-tab>
+
+    <mat-tab label="QUARTER 3">
+      <a
+        mat-raised-button
+        class="b3"
+        href="https://bosch-my.sharepoint.com/:x:/p/xvm2kor/EdQ5OfP921ZIuHt-n6ESYsgBt_vWbgpsmErv8xfXyGhagA"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+    </mat-tab>
+
+    <mat-tab label="QUARTER 4">
+      <a
+        mat-raised-button
+        class="b4"
+        href="https://bosch-my.sharepoint.com/:x:/p/xvm2kor/EexpvQ03Gs9Iq21z24eFGWIBaH8pX4RrF4hGhzYofv_6qw"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+    </mat-tab>
+  </mat-tab-group>
+</div>

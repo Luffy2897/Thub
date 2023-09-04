@@ -1,0 +1,58 @@
+<div class="container">
+  <!-- HOME BUTTON CODE STARTS HERE-->
+  <a (click)="onBtnClick()">
+    <button mat-mini-fab id="a1">
+      <mat-icon>home</mat-icon>
+    </button></a
+  >
+  <!-- CODE FOR CREATING TEXTS BESIDE HOME BUTTON -->
+  <div class="a">
+    <h4>
+      &nbsp;&nbsp; <a routerLink="/home" style="color: rgb(14, 12, 12)">Home</a>
+      <!-- CHANGE THE HOME BUTTON ROUTING HERE -->
+      <a routerLink="/custom" style="color: green">
+        &gt;T-hub Learning Offerings
+      </a>
+    </h4>
+    <!-- CODE FOR LOGOUT -->
+    <div>
+      <a routerLink="" style="text-decoration: none;">
+        <button mat-raised-button color="warn" class="b1" style="color: black;">LOGOUT</button>
+      </a>
+    </div>
+  </div>
+  <!-- CODE FOR THE BUTTONS DISPLAYED IN SAT -->
+  <div class="container1">
+    <div class="a1">
+      <li>
+        <!-- CHANGE THE ROUTING FOR CUSTOM PROGRAM HERE -->
+        <a routerLink="/custom_program"
+          ><b style="color: rgb(179, 60, 12)">CUSTOM&nbsp;PROGRAM</b>
+        </a>
+      </li>
+    </div>
+    <!-- FOR CUSTOM PROGRAM AND OPEN CALENDAR WITH SOME STYLINGS IN THEM TO NOT COLLIDE -->
+    <div class="a2">
+      <li>
+        <!-- CHANGE THE ROUTING FOR OPEN CALENDAR HERE -->
+        <a routerLink="/open_calender"
+          ><b style="color: rgb(179, 60, 12)">OPEN&nbsp;CALENDER</b></a
+        >
+      </li>
+    </div>
+    <!-- CODE FOR QUALIFICATION PROGRAMS -->
+    <div class="a3">
+      <li>
+        <!-- CHANGE THE ROUTING FOR TCQ HERE -->
+        <a routerLink="/tcq"><b style="color: rgb(179, 60, 12)">TCQ</b></a>
+      </li>
+    </div>
+    <!-- CODE FOR TCQ AND PMQ BUTTONS WITH SOME STYLINGS TO NOT COLLIDE -->
+    <div class="a4">
+      <li>
+        <!-- CHANGE THE ROUTING FOR PMQ HERE -->
+        <a routerLink="/pmq"><b style="color: rgb(179, 60, 12)">PMQ</b></a>
+      </li>
+    </div>
+  </div>
+</div>

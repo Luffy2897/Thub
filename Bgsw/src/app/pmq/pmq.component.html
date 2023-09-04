@@ -1,0 +1,119 @@
+<div class="header"></div>
+<!-- <img src="../../assets/imges/header2.png" width="100%" >  -->
+
+<div class="container">
+  <button mat-mini-fab id="a1" routerLink="/custom">
+    <mat-icon>home</mat-icon>
+  </button>
+  <div class="a">
+    <h4>
+      &nbsp;&nbsp;
+      <a routerLink="/custom" style="color: rgb(13, 13, 13)">
+        T-hub Learning Offerings
+      </a>
+      <a routerLink="/pmq" style="color: chartreuse"> > PMQ</a>
+    </h4>
+  </div>
+  <!-- EXPANSION PANEL FOR RESOURCES START -->
+  <div>
+    <mat-form-field color="accent" style="margin-left: 0.5%; width: 14%">
+      <mat-label style="font-weight: bold; color: aliceblue"
+        >Resources</mat-label
+      >
+      <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+        <a
+          href="https://docs.google.com/presentation/d/11ERD3625oai-tEXK8ALDFIgS2I08HFhX/edit?usp=drive_link&ouid=110604609918416160002&rtpof=true&sd=true%22"
+          target="_blank"
+        >
+          <mat-option value="rs1" style="font-weight: bold">
+            Project Presentation Template
+          </mat-option>
+        </a>
+        <mat-divider></mat-divider>
+
+        <a href="https://docs.google.com/presentation/d/11DN-Qrkn-W1wVYjcP8s-xUrO-W51cQ8T/edit?usp=drive_link&ouid=110604609918416160002&rtpof=true&sd=true%22"
+        target="_blank">
+        <mat-option value="rs2" style="font-weight: bold">
+          PMQ Journey
+        </mat-option>
+        <mat-divider></mat-divider>
+        </a>
+
+        <a href="https://docs.google.com/presentation/d/11FLhWyf-IG3iBeaDxOKg6RmOnEDCnBEz/edit?usp=drive_link&ouid=110604609918416160002&rtpof=true&sd=true%22"
+        target="_blank">
+        <mat-option value="rs3" style="font-weight: bold">
+          Process Workflow
+        </mat-option>
+        </a>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <!-- EXPANSION PANEL FOR RESOURCES END-->
+  <!-- CODE FOR LOGOUT -->
+  <div>
+    <a routerLink="" style="text-decoration: none;">
+      <button mat-raised-button color="warn" class="c" style="color: black;">LOGOUT</button>
+    </a>
+  </div>
+  <!-- HERE THE CSS OF THE WHOLE PAGE IS THERE -->
+  <mat-tab-group color="warn" dynamicHeight="10" class="box">
+    <mat-tab label="PMQ-E">
+      <a
+        mat-raised-button
+        class="b1"
+        href="https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+      <a
+        mat-raised-button
+        class="b1"
+        href="https://drive.google.com/file/d/1q20yW9_nt-sQJjLOTjnkE9aKa3FM-RfW/view?usp=sharing"
+        target="_blank"
+        color="warn"
+        >DOWNLOAD</a
+      >
+    </mat-tab>
+    <br />
+
+    <mat-tab label="PMQ-D">
+      <a
+        mat-raised-button
+        class="b2"
+        href="https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+      <a
+        mat-raised-button
+        class="b2"
+        href="https://drive.google.com/file/d/1q20yW9_nt-sQJjLOTjnkE9aKa3FM-RfW/view?usp=sharing"
+        target="_blank"
+        color="warn"
+        >DOWNLOAD</a
+      >
+    </mat-tab>
+
+    <mat-tab label="RK-PMQ">
+      <a
+        mat-raised-button
+        class="b3"
+        href="https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+        target="_blank"
+        color="warn"
+        >VIEW</a
+      >
+      <a
+        mat-raised-button
+        class="b3"
+        href="https://drive.google.com/file/d/1q20yW9_nt-sQJjLOTjnkE9aKa3FM-RfW/view?usp=sharing"
+        target="_blank"
+        color="warn"
+        >DOWNLOAD</a
+      >
+    </mat-tab>
+  </mat-tab-group>
+</div>

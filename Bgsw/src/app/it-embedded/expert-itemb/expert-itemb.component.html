@@ -1,0 +1,72 @@
+<div class="background">
+  <br />
+  <h1
+    style="
+       text-align: center;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 3%;"
+    
+  >
+    SOFTWARE-EMBEDDED TOPICS
+  </h1>
+  <div class="a">
+    <h4>
+      <a routerLink="/custom" style="color: rgb(22, 21, 21)">
+        T-hub Learning Offerings
+      </a>
+      <a routerLink="/custom_program" style="color: rgb(15, 15, 14)">
+        > Custom Programs</a
+      >
+      <a routerLink="/custom_program" style="color: rgb(16, 16, 16)">
+        > SOFTWARE-EMBEDDED</a
+      >
+      <a routerLink="/expert-itemb" style="color: chartreuse"> : Expert</a>
+    </h4>
+  </div>
+  <table class="table">
+    <tr>
+      <th class="a2">TOPICS</th>
+      <th class="a3">DURATION IN DAYS</th>
+      <th class="a4">HANDS-ON</th>
+      <th>LINK</th>
+    </tr>
+    <!-- FOR EXPANSION PANEL CODE STARTING AND ENDING -->
+    <!-- START -->
+    <tr class="link">
+      <td>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> DevSecOps Expert </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>
+            Terraform Advanced, Infrastructure as code (IaC) concepts, Terraform
+            Cloud and Enterprise capabilities, Advanced: Pulumi, Ansible,
+            Kubernetes, Working with Namespaces and Pods, Application Lifecycle
+            Management, Kubernetes Services, schedulings and storage management,
+            Controllers, security concepts, Helm, Azure DeVos - Planning, Source
+            Control, Technical Debt, Git for Enterprise DevOps, Azure Pipelines,
+            Infrastructure and Configuration using Azure Tools, Third Party
+            Infrastructure as Code Tools, Containers using Docker, Kubernetes
+            Service Infrastructure, Feedback mechanisms, Security in DevOps
+            Projects, Validating Code Bases for Compliance, Monitoring
+            (Prometheus)
+          </p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </td>
+      <!-- END -->
+      <td>7</td>
+      <td>TBC</td>
+      <td class="link"><a href="">link</a></td>
+    </tr>
+  </table>
+</div>

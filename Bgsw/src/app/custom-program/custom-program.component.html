@@ -1,0 +1,376 @@
+<div class="container">
+  <!-- HOME BUTTON CODE STARTS HERE-->
+  <div>
+    <!-- CHANGE THE HOME BUTTON ROUTING HERE -->
+    <button mat-mini-fab id="a1" routerLink="/custom" style="margin-top: 4.5%">
+      <mat-icon>home</mat-icon>
+    </button>
+  
+      <li>
+        <button mat-raised-button color="warn" class="b1" >
+          <a routerLink="" style="text-decoration: none;color:black;">LOGOUT</a>
+        </button>
+      </li>
+
+  </div>
+  <!-- CODE FOR CREATING TEXTS BESIDE HOME BUTTON -->
+  <div class="a">
+    <h4>
+      &nbsp;&nbsp;
+      <a routerLink="/custom" style="color: rgb(14, 12, 12);text-decoration: none;">
+        T-hub Learning Offerings
+      </a>
+      <a routerLink="/custom_program" style="color: green;text-decoration: none;">
+        &gt;CUSTOM-PROGRAM</a
+      >
+    </h4>
+  </div>
+
+  <!-- CODE FOR RESOURCES EXPANSION PANEL -->
+  <div>
+    <mat-form-field
+      color="accent"
+      style="margin-left: 0.5%; width: 20%; margin-top: 0.5%"
+    >
+      <mat-label style="font-weight: bold; color: aliceblue"
+        >Resources</mat-label
+      >
+
+      <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EbS6XRQYxMZBoD0zpafrdLMBaHJH-8L4tt2tcl2xgGkKBw?e=NxukWP"
+          target="_blank" style="text-decoration: none"
+        >
+          <mat-option value="rs1" style="font-weight: bold">
+            Faculty Re-Evaluation Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EStY9J-5fKlCriK2v-g9g5YBNRFECBvgRhW8lcqiqpovuA?e=9Shc3p"
+          target="_blank" style="text-decoration: none"
+        >
+          <mat-option value="rs2" style="font-weight: bold">
+            Training Need Requisition Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/r/personal/rxd2kor_bosch_com/Documents/CD-80006-903_ANH_N_EN_2021-06-29.pdf?csf=1&web=1&e=FLyYfR"
+          target="_blank" style="text-decoration: none"
+        >
+          <mat-option value="rs3" style="font-weight: bold">
+            Single Source Justification Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EZSoSCr3ha1LuW-vps6idP4BAPUPaq_VOkH43nvELI4btA?e=s8tUlg"
+          target="_blank" style="text-decoration: none"
+        >
+          <mat-option value="rs4" style="font-weight: bold">
+            Faculty Evaluation Form
+          </mat-option>
+        </a>
+
+        <mat-divider></mat-divider>
+
+        <a
+          href="https://bosch-my.sharepoint.com/:b:/p/rxd2kor/EZ6eObVy6PxFsZDXAAfjbs0BPl4muMx6M23xzL6muJQhtQ?e=a0TP6m"
+          target="_blank" style="text-decoration: none"
+        >
+          <mat-option value="rs5" style="font-weight: bold">
+            Instructor Design Template
+          </mat-option>
+        </a>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <!-- IT BUTTON -->
+
+  <div class="it">
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="It"
+      />
+      SOFTWARE</label
+    >
+  </div>
+
+  <br />
+  <!-- SOFTWARE OPTIONS BUTTON -->
+
+  <div *ngIf="selectedDifficulty === 'It'">
+    <mat-chip-listbox style="margin-left: 18%">
+      <mat-chip-option
+        color="accent"
+        routerLink="/basic"
+        style="margin-top:-4.3%;margin-left: 51%;"
+        >Basic</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/intermediate"
+        style="margin-top:-4.3%"
+        >Intermediate</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/advance"
+        style="margin-top:-4.3%"
+        >Advance</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/expert"
+        style="margin-top:-4.3%"
+        >Expert</mat-chip-option
+      >
+    </mat-chip-listbox>
+  </div>
+
+  <!-- IT-EMBEDDED BUTTON -->
+
+  <div class="it-em">
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="It-emd"
+        style="margin-left: 7px"
+      />SOFTWARE-EMBEDDED</label
+    >
+  </div>
+  <br />
+
+  <!-- EMBEDDED OPTIONS BUTTON -->
+
+  <div *ngIf="selectedDifficulty === 'It-emd'">
+    <mat-chip-listbox style="margin-left: 72.5%">
+      <mat-chip-option routerLink="/basicitemb" style="margin-top: -12.5%"
+        >Basic</mat-chip-option
+      >
+
+      <mat-chip-option routerLink="/intermediateitemb" style="margin-top: -12.5%"
+        >Intermediate</mat-chip-option
+      >
+
+      <mat-chip-option routerLink="/advanceitemb" style="margin-top: -12.5%"
+        >Advance</mat-chip-option
+      >
+
+      <mat-chip-option routerLink="/expertitemb" style="margin-top: -12.5%"
+        >Expert</mat-chip-option
+      >
+    </mat-chip-listbox>
+  </div>
+  <!-- PROCESS BUTTON -->
+
+  <div class="process">
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Process"
+      />
+      PROCESS</label
+    >
+  </div>
+
+  <br />
+  <!-- PROCESS OPTIONS BUTTON -->
+
+  <div *ngIf="selectedDifficulty === 'Process'">
+    <mat-chip-listbox id="m1" style="margin-left: 63%">
+      <mat-chip-option
+        color="accent"
+        routerLink="/basicp"
+        style="margin-top: -9.5%"
+        >Basic</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/intermediatep"
+        style="margin-top: -9.5%"
+        >Intermediate</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/advancep"
+        style="margin-top: -9.5%"
+        >Advance</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/expertp"
+        style="margin-top: -9.5%"
+        >Expert</mat-chip-option
+      >
+    </mat-chip-listbox>
+  </div>
+  <!-- TESTING BUTTON -->
+
+  <div class="testing">
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Testing"
+      />
+      TESTING</label
+    >
+  </div>
+
+  <br />
+  <!-- TESTING OPTIONS BUTTON -->
+
+  <div *ngIf="selectedDifficulty === 'Testing'">
+    <mat-chip-listbox id="m1" style="margin-left: 62.5%">
+      <mat-chip-option
+        color="accent"
+        routerLink="/basict"
+        style="margin-top: -9.5%"
+        >Basic</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/intermediatet"
+        style="margin-top: -9.5%"
+        >Intermediate</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/advancet"
+        style="margin-top: -9.5%"
+        >Advance</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/expertt"
+        style="margin-top: -9.5%"
+        >Expert</mat-chip-option
+      >
+    </mat-chip-listbox>
+  </div>
+
+  <!-- EMBEDDED BUTTON -->
+
+  <div class="embedded">
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Embedded"
+      />
+      EMBEDDED</label
+    >
+  </div>
+
+  <br />
+  <!--EMBEDDED OPTIONS BUTTON -->
+
+  <div *ngIf="selectedDifficulty === 'Embedded'">
+    <mat-chip-listbox id="m2" style="margin-left: 63%">
+      <mat-chip-option
+        color="accent"
+        routerLink="/basic-e"
+        style="margin-top: -9.4%"
+        >Basic</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/intermediate-e"
+        style="margin-top: -9.4%"
+        >Intermediate</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/advance-e"
+        style="margin-top: -9.4%"
+        >Advance</mat-chip-option
+      >
+
+      <mat-chip-option
+        color="accent"
+        routerLink="/expert-e"
+        style="margin-top: -9.4%"
+        >Expert</mat-chip-option
+      >
+    </mat-chip-listbox>
+  </div>
+
+  <!-- ELECTRICAL BUTTON -->
+
+  <div class="ele">
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Electrical"
+      />ELECTRICAL</label
+    >
+  </div>
+</div>
+
+<br />
+
+<!-- ELECTRICAL OPTIONS BUTTON -->
+
+<div *ngIf="selectedDifficulty === 'Electrical'">
+  <mat-chip-listbox id="m2" style="margin-left: 60%">
+    <mat-chip-option
+      color="accent"
+      routerLink="/basicele"
+      style="margin-top:86.5%"
+      >Basic</mat-chip-option
+    >
+
+    <mat-chip-option
+      color="accent"
+      routerLink="/intermediateele"
+      style="margin-top: 86.5%"
+      >Intermediate</mat-chip-option
+    >
+
+    <mat-chip-option
+      color="accent"
+      routerLink="/advanceele"
+      style="margin-top: 86.5%"
+      >Advance</mat-chip-option
+    >
+
+    <mat-chip-option
+      color="accent"
+      routerLink="/expertele"
+      style="margin-top: 86.5%"
+      >Expert</mat-chip-option
+    >
+  </mat-chip-listbox>
+</div>

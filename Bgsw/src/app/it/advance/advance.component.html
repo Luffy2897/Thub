@@ -1,0 +1,89 @@
+<div class="background">
+  <br />
+  <h1
+    style="
+       text-align: center;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 3%;"
+    
+  >
+    SOFTWARE-ADVANCE TOPICS
+  </h1>
+  <div class="a">
+    <h4>
+      <a routerLink="/custom" style="color: rgb(22, 21, 21)">
+        T-hub Learning Offerings
+      </a>
+      <a routerLink="/custom_program" style="color: chartreuse">
+        > Custom Programs</a
+      >
+      <a routerLink="/custom_program" style="color: chartreuse"> > SOFTWARE</a>
+      <a routerLink="/advance" style="color: chartreuse"> : Advance</a>
+    </h4>
+  </div>
+  <table class="table">
+    <tr>
+      <th class="a2">TOPICS</th>
+      <th class="a3">DURATION IN DAYS</th>
+      <th class="a4">HAND-SON</th>
+      <th>LINK</th>
+    </tr>
+    <!-- FOR EXPANSION PANEL CODE STARTING AND ENDING -->
+    <!-- START -->
+    <tr class="link">
+      <td>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> DevOps with Azure and AWS </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>
+            Overview of DevOps, DevOps tools, IAC, SCM, CI-CD, DevOps for
+            Databases, Releasing Database Changes, Deploy AWS data lake ETL jobs
+            using CDK Pipelines, Source control in Azure Data Factory, Applying
+            DataOps to Azure Data Factory, CI/CD For Azure Data Factory, CI-CD
+            for Containerized Applications,
+          </p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </td>
+      <!-- END -->
+      <td>5</td>
+      <td>TBC</td>
+      <td class="link"><a href="">link</a></td>
+    </tr>
+
+    <!-- FOR EXPANSION PANEL CODE STARTING AND ENDING -->
+    <!-- START -->
+    <tr class="link">
+      <td>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> DevOps CI/CD </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>Azure cloud, AWS cloud, Google cloud, Terraform, Ansible</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </td>
+      <!-- END -->
+      <td>10</td>
+      <td>TBC</td>
+      <td class="link"><a href="">link</a></td>
+    </tr>
+  </table>
+</div>

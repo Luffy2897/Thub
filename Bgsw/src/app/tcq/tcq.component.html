@@ -1,0 +1,211 @@
+<div class="container">
+  <div>
+    <button
+      mat-mini-fab
+      color="accent"
+      id="a1"
+      routerLink="/custom"
+      style="margin-top: 4%"
+    >
+      <mat-icon>home</mat-icon>
+    </button>
+  </div>
+
+  <div class="a">
+    <h4>
+      &nbsp;&nbsp;
+      <a routerLink="/custom" style="color: rgb(10, 10, 10)">
+        T-hub Learning Offerings
+      </a>
+      <a routerLink="/tcq" style="color: rgb(29, 112, 34)">&gt;TCQ</a>
+    </h4>
+  </div>
+
+  <!-- EXPANSION FOR RESOURCES  -->
+  <mat-accordion>
+    <mat-form-field
+      color="accent"
+      style="margin-left: 0.5%; width: 15%; margin-top: 0.5%"
+    >
+      <mat-label style="font-weight: bold; color: aliceblue"
+        >Resources</mat-label
+      >
+      <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+        <a>
+          <mat-option value="rs1" style="font-weight: bold">
+            Process Workflow and Framework
+          </mat-option>
+        </a>
+        <mat-divider></mat-divider>
+        <mat-option value="rs2" style="font-weight: bold">
+          TCQ Program Owners
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-accordion>
+  <!-- CODE FOR LOGOUT -->
+  <div>
+    <a routerLink="" style="text-decoration: none">
+      <button mat-raised-button color="warn" class="c" style="color: black">
+        LOGOUT
+      </button>
+    </a>
+  </div>
+  <!-- EXPANSION FOR RESOURCES -->
+
+  <div class="radio1">
+    <!-- FOUNDATION BUTTON -->
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Foundation"
+      />
+      Foundation
+    </label>
+  </div>
+
+  <div class="radio2">
+    <!-- BASIC BUTTON -->
+
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Basic"
+      />
+      Basic
+    </label>
+  </div>
+
+  <div class="radio3">
+    <!-- ADVANCE BUTTON -->
+
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Advance"
+      />
+      Advance
+    </label>
+  </div>
+
+  <div class="radio4">
+    <!-- EXPERT BUTTON -->
+
+    <label
+      ><input
+        type="radio"
+        name="difficulty"
+        [(ngModel)]="selectedDifficulty"
+        value="Expert"
+      />
+      Expert
+    </label>
+
+    <!-- FOUNDATION OPTIONS BUTTON -->
+
+    <div *ngIf="selectedDifficulty === 'Foundation'">
+      <mat-chip-listbox id="m1">
+        <mat-chip-option
+          color="accent"
+          routerLink="/embeddedF"
+          style="margin-top: -40.5%; margin-left: -58%"
+          >Embedded</mat-chip-option
+        >
+
+        <mat-chip-option
+          color="accent"
+          routerLink="/itF"
+          style="margin-top: -34%; margin-left: -13%"
+          >Software</mat-chip-option
+        >
+
+        <mat-chip-option
+          color="accent"
+          routerLink="/hardwareF"
+          style="margin-top: -30%"
+          >Hardware</mat-chip-option
+        >
+
+        <mat-chip-option
+          color="accent"
+          routerLink="/mechanicalF"
+          style="margin-top: -30%"
+          >Mechanical</mat-chip-option
+        >
+      </mat-chip-listbox>
+    </div>
+
+    <!-- BASIC OPTIONS BUTTON -->
+
+    <div *ngIf="selectedDifficulty === 'Basic'">
+      <mat-chip-listbox id="m2">
+        <mat-chip-option color="accent" routerLink="/embeddedB"
+          >Embedded</mat-chip-option
+        >
+
+        <mat-chip-option color="accent" routerLink="/itB"
+          >Software</mat-chip-option
+        >
+
+        <mat-chip-option color="accent" routerLink="/hardwareB"
+          >Hardware</mat-chip-option
+        >
+
+        <mat-chip-option color="accent" routerLink="/mechanicalB"
+          >Mechanical</mat-chip-option
+        >
+      </mat-chip-listbox>
+    </div>
+
+    <br />
+
+    <!-- ADVANCE OPTIONS BUTTON -->
+
+    <div *ngIf="selectedDifficulty === 'Advance'">
+      <mat-chip-listbox id="m3">
+        <mat-chip-option color="accent" routerLink="/embeddedA"
+          >Embedded</mat-chip-option
+        >
+
+        <mat-chip-option color="accent" routerLink="/itA"
+          >Software</mat-chip-option
+        >
+
+        <mat-chip-option color="accent" routerLink="/hardwareA"
+          >Hardware</mat-chip-option
+        >
+
+        <mat-chip-option color="accent" routerLink="/mechanicalA"
+          >Mechanical</mat-chip-option
+        >
+      </mat-chip-listbox>
+    </div>
+
+    <!-- EXPERT OPTIONS BUTTON -->
+
+    <div *ngIf="selectedDifficulty === 'Expert'">
+      <mat-chip-listbox id="m4">
+        <mat-chip-option color="accent" routerLink="/OCA">OCA</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+
+    <br />
+
+    <!--EMBEDDED OPTIONS BUTTON -->
+
+    <div *ngIf="selectedDifficulty === 'Embedded'">
+      <mat-chip-listbox id="m5">
+        <mat-chip-option color="accent" routerLink="/expert-e"
+          >Expert</mat-chip-option
+        >
+      </mat-chip-listbox>
+    </div>
+  </div>
+</div>

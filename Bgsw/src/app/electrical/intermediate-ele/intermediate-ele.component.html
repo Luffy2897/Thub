@@ -1,0 +1,95 @@
+<div class="background">
+  <br />
+  <h1
+    style="
+       text-align: center;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-top: 3%;"
+    
+  >
+    ELECTRICAL-INTERMEDIATE TOPICS
+  </h1>
+
+  <div class="a">
+    <h4>
+      <a routerLink="/custom" style="color: rgb(22, 21, 21)">
+        T-hub Learning Offerings
+      </a>
+      <a routerLink="/custom_program" style="color: rgb(15, 15, 14)"
+        >&gt;Custom Programs&gt;</a
+      >
+      <a routerLink="/custom_program" style="color: chartreuse">ELECTRICAL</a>
+      <a style="color: chartreuse">: Intermediate</a>
+    </h4>
+  </div>
+  <table class="table">
+    <tr>
+      <th class="a2">TOPICS</th>
+      <th class="a3">DURATION IN DYAS</th>
+      <th class="a4">HANDS-ON</th>
+      <th>LINK</th>
+    </tr>
+    <!-- FOR EXPANSION PANEL CODE STARTING AND ENDING -->
+    <!-- START -->
+    <tr class="link">
+      <td>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title
+              >High Speed Circuit and Board design
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>
+            Intro to microprocessor, architecture, components, difference
+            between 8 & 16 bit MPU, Ethernet – 802.3, protocols, Medium Access
+            Control, Ethernet Frame, BUS Topology, DDR4/LPDDR - DDR Architecture
+            and working principle, CPU to DDR access, Bus interface, PCIe, USB
+            Protocol
+          </p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </td>
+      <!-- END -->
+      <td>5</td>
+      <td>TBC</td>
+      <td class="link"><a href="">link</a></td>
+    </tr>
+
+    <!-- FOR EXPANSION PANEL CODE STARTING AND ENDING -->
+    <!-- START -->
+    <tr class="link">
+      <td>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>Power Electronics </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>
+            Discrete power devices - Diodes, MOSFET, IGBT, SIC, Magnetics,
+            Switched Power circuits - AC-DC, DC-DC, Motor drives, Inverters,
+          </p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel hideToggle>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+      </td>
+      <!-- END -->
+      <td>5</td>
+      <td>TBC</td>
+      <td class="link"><a href="">link</a></td>
+    </tr>
+  </table>
+</div>

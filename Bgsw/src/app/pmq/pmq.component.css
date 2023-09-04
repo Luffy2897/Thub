@@ -1,0 +1,79 @@
+/*For starting 2 buttons at the navbar*/
+
+#a1 {
+  top: 10.5%;
+  margin-left: 1.7%;
+  background-color: rgb(78, 136, 78);
+}
+
+#a2 {
+  margin-left: 82%;
+}
+
+.container {
+  background-image: url("../../assets/imges/PMQIMG1.png");
+  background-attachment: local;
+  background-size: cover;
+  width: 100%;
+  height: 99%;
+  overflow: hidden;
+}
+.b1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 170px;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+.b2 {
+  display: flex;
+  width: 180px;
+  margin-left: 38%;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+.b3 {
+  display: flex;
+  width: 180px;
+  margin-left: 71%;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+mat-tab-group {
+  margin: 180px;
+  margin-top: 90px;
+}
+mat-toolbar {
+  height: 100px;
+}
+.box {
+  padding-top: 7%;
+  padding-left: 9%;
+  padding-right: 140px;
+}
+.header {
+  background-image: url("../../assets/imges/header2.png");
+}
+button {
+  top: 18%;
+  left: -1.2%;
+}
+.a {
+  margin-top: 2.4%;
+  margin-left: 3.7%;
+}
+.box{
+  margin-top: 1%;
+}
+a{
+  text-decoration: none;
+}
+/* LOGOUT CSS */
+.c {
+  margin-top: -6%;
+  width: 120px;
+  margin-left: 90.3%;
+  font-weight: bolder;
+  text-decoration: none;
+}

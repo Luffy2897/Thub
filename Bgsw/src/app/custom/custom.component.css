@@ -1,0 +1,78 @@
+/* WHOLE PAGE BACKGROUND CSS */
+.container {
+  background-image: url("../../assets/imges/homepng1.png");
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+/* ROUTING FOR THE "a" CLASS HERE */
+.a {
+  margin-top: -2.5%;
+  margin-left: 3%;
+  background-attachment: fixed;
+}
+/* FOR DIV WITH ID a1 */
+#a1 {
+  margin-top: 4.5%;
+  margin-left: 0.3%;
+  background-color: rgb(78, 136, 78);
+}
+/* FOR THE HEADING IMAGE WHICH IS TEXT NAMED T-HUB LEARNING OFFERINGS */
+.head img {
+  margin-top: -1%;
+  margin-left: 25%;
+}
+/* CONTAINER FOR THE BELOW CSS */
+.container1 {
+  margin-top: 20%;
+}
+/* FOR DIV WITH CLASS a1 */
+.a1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 38%;
+  margin-right: 50%;
+  margin-left: 55%;
+}
+/* FOR DIV WITH CLASS a2 */
+.a2 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 44%;
+  margin-right: 55%;
+  margin-left: 55%;
+}
+/* FOR DIV WITH CLASS a3 */
+.a3 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 53%;
+  margin-right: 55%;
+  margin-left: 55%;
+}
+/* FOR DIV WITH CLASS a4 */
+.a4 {
+  position: absolute;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  top: 59%;
+  margin-right: 55%;
+  margin-left: 55%;
+}
+/* FOR THE ANCHOR TAG */
+a {
+  text-decoration: none;
+}
+/* CODE FOR LOGOUT */
+.b1 {
+  margin-top: 3%;
+  width: 120px;
+  margin-left: 89%;
+  font-weight: bolder;
+  text-decoration: none;
+}

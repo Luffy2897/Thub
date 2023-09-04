@@ -1,0 +1,128 @@
+#a1 {
+  margin-left: 1.2%;
+  background-color: rgb(78, 136, 78);
+}
+
+#a2 {
+  margin-left: 2%;
+}
+
+.container {
+  background-image: url("../../assets/imges/custom5.png");
+  background-attachment: fixed;
+  position: fixed;
+  overflow: hidden;
+  background-size: cover;
+  width: 99.8vw;
+  height: 99vh;
+}
+
+.b1 {
+  margin-top: 3.4%;
+  margin-left: 91.5%;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.custom {
+  margin-left: 30%;
+  margin-right: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.it {
+  margin-top: -2.5%;
+  margin-left: 45.5%;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.it-em {
+  margin-top: 1%;
+  margin-left: 49.4%;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.process {
+  margin-top: 1%;
+  margin-left: 51%;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.testing {
+  margin-left: 51%;
+  margin-top: 1%;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.embedded {
+  margin-top: 1%;
+  margin-left: 49.4%;
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.ele {
+  margin-top: 1%;
+  margin-left: 45.5%;
+  font-size: small;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input[type="radio"] {
+  transform: scale(2.75);
+}
+
+.radio {
+  position: relative;
+  margin-left: 49.9%;
+  margin-top: -28.2%;
+}
+
+input[type="radio"] {
+  border: 0px;
+  width: 5%;
+  height: 1.5em;
+  visibility: hidden;
+}
+
+label {
+  font-size: 160%;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* BUTTONS CSS */
+
+#m2 {
+  margin-left: 35%;
+}
+
+.nav {
+  width: 100%;
+  background-attachment: fixed;
+}
+
+button {
+  top: 17%;
+  left: -1%;
+  background-attachment: fixed;
+}
+
+.a {
+  margin-top: -9%;
+  margin-left: 4%;
+  background-attachment: fixed;
+}
+
+input{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
